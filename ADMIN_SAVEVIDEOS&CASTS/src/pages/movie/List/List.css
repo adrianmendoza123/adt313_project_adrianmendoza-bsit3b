@@ -1,0 +1,87 @@
+.lists-container {
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+.create-container {
+  align-self: flex-end;
+  margin: 1rem 0;
+}
+
+.table-container,
+.movie-lists {
+  width: 100%;
+}
+
+.table-container {
+  text-align: center;
+}
+
+button {
+  width: 70px;
+  color: white;
+  margin-left: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete {
+  background: #FF4C4C;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.delete:hover {
+  background: #FF4C4C;
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.edit {
+  background: #4D94FF;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.edit:hover {
+  background: #4D94FF;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.create {
+  background: #fdd835; /* Superman yellow */
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 160px;
+  border-radius: 20px;
+  padding: 12px 28px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.create:hover {
+  background: #fdd835d9;
+  transform: scale(1.1) rotate(2deg);
+}
+
+.create:active {
+  transform: scale(1) rotate(0deg);
+}
+
+.create:disabled {
+  background-color: #7a7a7a;
+  cursor: not-allowed;
+}
+
+.tile-cell {
+  text-align: justify;
+}

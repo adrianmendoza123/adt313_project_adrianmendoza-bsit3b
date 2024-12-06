@@ -1,0 +1,114 @@
+.Register {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.207), rgba(0, 0, 0, 0.207)), url('dark-superman.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-container {
+  width: 450px;
+  border-radius: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.85); /* Slightly lighter background for contrast */
+  padding: 2rem;
+  color: rgba(220, 220, 220, 1); /* Light gray text for readability */
+  box-shadow: 0px 6px 18px rgba(255, 0, 0, 0.3); /* Glowing red shadow */
+  border: 2px solid rgba(255, 0, 0, 0.6); /* Glowing red border */
+}
+
+.main-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: rgba(240, 240, 240, 1); /* Brighter text for the heading */
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8); /* Glowing text effect */
+}
+
+.form-containerg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-group label {
+  color: rgba(200, 200, 200, 1); /* Lighter gray for labels */
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  padding: 0.9rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.form-group input:focus {
+  border: 1px solid #ff4d4d; /* Red focus border */
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.submit-container {
+  grid-column: span 2;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.btn-register {
+  display: block;
+  width: 100%;
+  background: linear-gradient(to right, #ff4d4d, #e30000); /* Fiery red gradient for button */
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(255, 79, 79, 0.5); /* Glowing red shadow */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-register:hover {
+  background: linear-gradient(to right, #e30000, #b20000); /* Darker red hover effect */
+  transform: translateY(-3px);
+}
+
+.reg-container {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(220, 220, 220, 1); /* Consistent light gray */
+  text-align: center;
+}
+
+.reg-container a {
+  color: #ff4d4d; /* Matches the fiery red button gradient */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.reg-container a:hover {
+  text-decoration: underline;
+  color: #e30000; /* Matches hover effect of the button */
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
